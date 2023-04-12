@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MVC\\ChronusTaskMVC\\chronus\\Chronus.csproj": {}
+    "C:\\MVC\\Macoratti\\Macoratti.csproj": {}
   },
   "projects": {
-    "C:\\MVC\\ChronusTaskMVC\\chronus\\Chronus.csproj": {
+    "C:\\MVC\\Macoratti\\Macoratti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MVC\\ChronusTaskMVC\\chronus\\Chronus.csproj",
-        "projectName": "Chronus",
-        "projectPath": "C:\\MVC\\ChronusTaskMVC\\chronus\\Chronus.csproj",
+        "projectUniqueName": "C:\\MVC\\Macoratti\\Macoratti.csproj",
+        "projectName": "Macoratti",
+        "projectPath": "C:\\MVC\\Macoratti\\Macoratti.csproj",
         "packagesPath": "C:\\Users\\SMN\\.nuget\\packages\\",
-        "outputPath": "C:\\MVC\\ChronusTaskMVC\\chronus\\obj\\",
+        "outputPath": "C:\\MVC\\Macoratti\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SMN\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4RHZoUVo348ps+6TnPt/Hj/VyA7HKb0vZTQU6SwS1EL6r0b0NLwiICZ9Gth7AYklLJsE6j4+NOPBvH29E4og7Q==",
+  "dgSpecHash": "vCSqOv/DDTUpWMnuapMayJychFm4A3Kud1hUR8HJVWW+R9giB6zbOHDWoYVxATZVkLrnIxQXNIMdNLQBKrgbEw==",
   "success": true,
-  "projectFilePath": "C:\\MVC\\ChronusTaskMVC\\Chronus\\Chronus.csproj",
+  "projectFilePath": "C:\\MVC\\ChronusTaskMVC\\chronus\\Chronus.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
