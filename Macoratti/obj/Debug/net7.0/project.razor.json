@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\obj\\Debug\\net7.0\\project.razor.json",
-  "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Chronus.csproj",
+  "SerializedFilePath": "c:\\MVC\\Macoratti\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\MVC\\Macoratti\\Macoratti.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,41 +18642,36 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "Chronus",
+  "RootNamespace": "Macoratti",
   "Documents": [
     {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\MVC\\Macoratti\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\MVC\\Macoratti\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\MVC\\Macoratti\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\MVC\\Macoratti\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\MVC\\Macoratti\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MVC\\ChronusTaskMVC\\Chronus\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\MVC\\Macoratti\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],

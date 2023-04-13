@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MVC\\Macoratti\\Macoratti.csproj": {}
+    "c:\\MVC\\Macoratti\\Macoratti.csproj": {}
   },
   "projects": {
-    "C:\\MVC\\Macoratti\\Macoratti.csproj": {
+    "c:\\MVC\\Macoratti\\Macoratti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MVC\\Macoratti\\Macoratti.csproj",
+        "projectUniqueName": "c:\\MVC\\Macoratti\\Macoratti.csproj",
         "projectName": "Macoratti",
-        "projectPath": "C:\\MVC\\Macoratti\\Macoratti.csproj",
+        "projectPath": "c:\\MVC\\Macoratti\\Macoratti.csproj",
         "packagesPath": "C:\\Users\\SMN\\.nuget\\packages\\",
-        "outputPath": "C:\\MVC\\Macoratti\\obj\\",
+        "outputPath": "c:\\MVC\\Macoratti\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SMN\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
