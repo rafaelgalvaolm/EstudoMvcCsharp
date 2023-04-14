@@ -1,0 +1,9 @@
+# Folders
+obj/
+bin/
+.vs/
+.vscode/
+global.json
+
+# Files
+.env
