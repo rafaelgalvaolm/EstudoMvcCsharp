@@ -1,0 +1,6 @@
+.fakeBody
+{
+    width: max-content;
+    height: max-content;
+    background-image: url('~/images/lamboFrontView.jpg');
+}
