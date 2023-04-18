@@ -2,9 +2,46 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="fakeBody">
-
+<div class="containerImg">
+	<div class="card text-white bg-dark">
+		    <img src="~/images/carView.jpg" class="card-img" alt="...">
+	    <div class="card-img-overlay">
+            <div class="cardText">
+                <div class="card-body">
+                    <h5 class="card-title">O Macoratti Rental Cars</h5>
+		             <p class="card-text">Tem como objetivo trazer para você <br/> 
+                     os melhores carros esportivos <br/> com o melhor preço do mercado</p>
+                </div>
+            <div class="cardText2">
+                <div class="card-body">
+                    <h5> Já é um cliente? Faça seu Login</h5>
+                    <form id="dadosLogin"class="formLogin">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <p class="criarConta"> Ainda não possui uma conta? Crie sua conta <button type="button" class="btn btn-success" id="Criar" onclick="home.sign()">aqui</button></p>
+                    </form>
+                </div>
+            </div>
+            </div>
+	    </div>
+	</div>
 </div>
-
-
-@* <img src="~/images/lamboFrontView.jpg" alt="background"> *@
+<script src="~/js/home.js" asp-append-version="true"></script>
+<script>
+    home.init({
+        urls: {
+             sign: '@Url.Action("Index", "Sign")'
+        }
+    })
+</script>

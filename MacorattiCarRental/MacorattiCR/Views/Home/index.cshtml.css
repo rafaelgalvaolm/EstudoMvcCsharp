@@ -1,6 +1,44 @@
-.fakeBody
+.containerImg
 {
-    width: max-content;
-    height: max-content;
-    background-image: url('~/images/lamboFrontView.jpg');
+    margin: 0;
+    padding: 0;
+    background: url('~/images/carView.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
+
+
+.card-title, .card-text
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+.cardText2
+{
+    width: 60%;
+    height: 250%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 270%;
+}
+
+
+
+.cardText
+{
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.criarConta
+{
+    margin-top: 10%;
+}
+

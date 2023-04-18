@@ -1,0 +1,11 @@
+.formulCriar
+{
+    width: 90%;
+    margin-left: 4%;
+}
+
+.titulo
+{
+    display: flex;
+    justify-content: center;
+}
