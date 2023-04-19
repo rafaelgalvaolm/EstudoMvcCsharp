@@ -1,4 +1,4 @@
-namespace CarRental.web.Models;
+namespace CarRentModKrita.web.Models;
 
 public class ErrorViewModel
 {

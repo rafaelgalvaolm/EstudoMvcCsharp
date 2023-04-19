@@ -1,13 +1,10 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using CarRental.web.Models;
+using CarRentModKrita.web.Models;
 
-namespace CarRental.web.Controllers;
-
-    [Route("Home")]
+namespace CarRentModKrita.web.Controllers;
 public class HomeController : Controller
 {
-    [HttpGet("Index")]
     public IActionResult Index() => View();
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
