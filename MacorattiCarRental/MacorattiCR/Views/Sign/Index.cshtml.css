@@ -9,3 +9,22 @@
     display: flex;
     justify-content: center;
 }
+
+.form-check
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+}
+
+.containerCC
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70%;
+    text-align: center;
+}
+

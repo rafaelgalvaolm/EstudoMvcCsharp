@@ -12,6 +12,17 @@
     <div class="col-md-6">
       <label for="inputPassword4" class="form-label">Password</label>
       <input type="password" class="form-control" id="inputPassword4">
+      <span id="passwordHelpInline" class="form-text">
+      Must be 8-20 characters long.
+    </span>
+    </div>
+    <div class="col-md-6">
+      <label for="inputName1" class="form-label">Name</label>
+      <input type="text" class="form-control" id="inputName1">
+    </div>
+    <div class="col-md-6">
+      <label for="inputLastName1" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName1">
     </div>
     <div class="col-md-2">
       <label for="inputZip" class="form-label">Zip</label>
@@ -21,7 +32,7 @@
       <label for="inputAddress" class="form-label">Address</label>
       <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <label for="inputAddress2" class="form-label">Address 2</label>
       <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
     </div>
@@ -38,19 +49,53 @@
     </div>
     <hr/>
     <h5 class="titulo">Cadastrar Cartão de Crédito</h5>
-    <div class="row">
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-        Default radio
-      </label>
+    <div class="containerCC">
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+              <img class="ccImg" src="~/images/mastercard.svg">
+          </label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+              <img class="ccImg" src="~/images/paypal.svg">
+          </label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+              <img class="ccImg" src="~/images/visa.svg">
+          </label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+              <img class="ccImg" src="~/images/amex.svg">
+          </label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+              <img class="ccImg" src="~/images/elo.svg">
+          </label>
+          </div>
+       </div>
+    <div class="col-l-6">
+      <label for="inputName1" class="form-label">Cardholder Name</label>
+      <input type="text" class="form-control" id="inputName1">
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-      <label class="form-check-label" for="flexRadioDefault2">
-        Default checked radio
-      </label>
+    <div class="col-md-9">
+      <label for="inputCardNumber" class="form-label">CardNumber</label>
+      <input type="number" class="form-control" id="inputCardNumber">
     </div>
+    <div class="col-md-2">
+      <label for="inputExpDate" class="form-label">Expiration Date</label>
+      <input type="text" class="form-control" id="ExpDate">
+    </div>
+    <div class="col-md-2">
+      <label for="inputAddress" class="form-label">CVV</label>
+      <input type="number" class="form-control" id="inputAddress" placeholder="e.g. 000 / 0000">
     </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Sign Up</button>
