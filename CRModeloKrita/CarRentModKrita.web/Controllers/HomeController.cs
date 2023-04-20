@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
+using CarRentModKrita.web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using CarRentModKrita.web.Models;
 
 namespace CarRentModKrita.web.Controllers;
 public class HomeController : Controller

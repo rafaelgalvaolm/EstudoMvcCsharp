@@ -11,4 +11,8 @@
     <ProjectReference Include="..\CarRentModKrita.core\CarRentModKrita.core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+  </ItemGroup>
+
 </Project>
