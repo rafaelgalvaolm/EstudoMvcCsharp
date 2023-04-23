@@ -11,9 +11,23 @@
  href="@Url.Content("~/content/less/mysite.less")" /> 
 </head>
 <body>
-    <header>
-        
-    </header>
+     <nav>
+         <h2 class="logo">Car<span>Less</span></h2>
+         <ul>
+                <li class="navopt"><a asp-controller="Home" asp-action="Index" class="navLink">Home</a></li>
+                <li class="navopt"><a asp-controller="Carro" asp-action="Index" class="navLink">Carros</a></li>
+                <li class="navopt"><a asp-controller="Faq" asp-action="Index" class="navLink">F.A.Q</a></li>
+         </ul>
+            <div>
+                <button class="btnUser">
+                    <i data-feather="user"></i>
+                </button>
+                <div class="userDropdown">
+                    <a class="btnLogin"></a>
+                </div>
+            </div>
+        </nav>
+
     <div class="container">
         <main role="main">
             @RenderBody()
@@ -23,8 +37,12 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     
-<script type="text/javascript"
- src="@Url.Content("~/content/scripts/less-1.3.3.min.js")"></script>
+    <script type="text/javascript"
+        src="@Url.Content("~/content/scripts/less-1.3.3.min.js")"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="~/js/featherIcons.js"></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

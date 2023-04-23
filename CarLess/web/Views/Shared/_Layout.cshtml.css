@@ -1,48 +1,50 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿body
+{ 
+    background-color: rgb(20, 83, 85);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #0077cc;
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.navopt
+{
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.navLink
+{
+    text-decoration: none !important;
+    color: black;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.navLink:visited
+{
+    text-decoration: none !important;
+    color: black;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.logo
+{
+    color: cadetblue;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.logo span
+{
+    color: red;
 }
+
