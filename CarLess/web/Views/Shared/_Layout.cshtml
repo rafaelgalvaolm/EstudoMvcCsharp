@@ -14,7 +14,7 @@
      <nav>
          <h2 class="logo">Car<span>Less</span></h2>
          <ul>
-                <li class="navopt"><a asp-controller="Home" asp-action="Index" class="navLink">Home</a></li>
+                <li class="navopt"><a asp-controller="Home" asp-action="Index" class="navLink">Início</a></li>
                 <li class="navopt"><a asp-controller="Carro" asp-action="Index" class="navLink">Carros</a></li>
                 <li class="navopt"><a asp-controller="Faq" asp-action="Index" class="navLink">F.A.Q</a></li>
          </ul>
@@ -33,6 +33,13 @@
             @RenderBody()
         </main>
     </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2023 - Rafael Glavão Lopes de Mendonça</span>
+        </div>
+    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
