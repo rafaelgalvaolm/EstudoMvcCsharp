@@ -1,0 +1,33 @@
+.sidenav{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    left: 0px;
+    background-color: cadetblue;
+    z-index: 1;
+    border-radius: -5%;
+    font-family: 'Brush-Script MT', cursive;
+  }
+
+  .sidenav h2
+  {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #ccc;
+  }

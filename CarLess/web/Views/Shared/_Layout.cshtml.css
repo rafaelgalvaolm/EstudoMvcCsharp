@@ -41,9 +41,33 @@ nav
 .logo
 {
     color: cadetblue;
+    font-family: 'Brush-Script MT', cursive !important;
 }
 
 .logo span
 {
-    color: red;
+    color: #ff0000;
+    font-family: 'Brush-Script MT', cursive !important;
+}
+
+.btnSignIn
+{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btnSignUp
+{
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
 }

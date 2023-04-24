@@ -1,5 +1,3 @@
-
-
 var home = (function () {
     var configs = {
         urls: {
@@ -11,14 +9,8 @@ var home = (function () {
         configs = $configs;
     };
 
-    var chamaCarousel = function () {
-        $.get(configs.urls.index).done((html) => {
-            $('#carrossel').html(html);
-        });
-    };
 
     return {
         init: init,
-        chamaCarousel: chamaCarousel
     };
 })()

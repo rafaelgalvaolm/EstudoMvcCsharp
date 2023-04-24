@@ -57,6 +57,8 @@ var els = document.getElementsByTagName('a');
 
 for (var el = 0; el < els.length; el++) {
     els[el].style["text-decoration"] = "none",
-    els[el].style["color"] = "#000";
+    els[el].style["color"] = "#ff0000",
+    els[el].style["font-weight"] = "bold"
+    els[el].style["font-family"] = "'Brush-Script MT', cursive";
 }
 

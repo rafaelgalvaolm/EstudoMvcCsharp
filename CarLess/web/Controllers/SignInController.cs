@@ -4,7 +4,7 @@ using web.Models;
 
 namespace web.Controllers;
 
-    [Route("sign")]
+    [Route("signIn")]
 
 public class SignController : Controller
 {
