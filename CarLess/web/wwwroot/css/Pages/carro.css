@@ -31,3 +31,25 @@
   li:hover {
     background-color: #ccc;
   }
+
+  .containerCarro
+  {
+    width: 100%;
+  }
+
+  .containerCarro .ContainerNav
+  {
+    width: 20%;
+  }
+  
+  .containerCarro .containerMain
+  {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+
+  .containerMain
+  {
+    background-color: whitesmoke;
+  }

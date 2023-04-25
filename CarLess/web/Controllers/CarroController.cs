@@ -8,8 +8,18 @@ namespace web.Controllers;
 
 public class CarroController : Controller
 {
-    [HttpGet("index")]
-    
     public IActionResult Index() => View();
+
+    [HttpGet("suv")]
+    public IActionResult Suv() => View("_Suv");
+
+    [HttpGet("esportivo")]
+    public IActionResult Esportivo() => View("_Esportivo");
+
+    [HttpGet("performace")]
+    public IActionResult Performace() => View("_Performace");
+
+    [HttpGet("utilitario")]
+    public IActionResult Utilitario() => View("_Utilitario");
     
 }

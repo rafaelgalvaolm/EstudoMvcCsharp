@@ -4,12 +4,15 @@ using web.Models;
 
 namespace web.Controllers;
 
-    [Route("faq")]
+    [Route("login")]
 
-public class FaqController : Controller
+public class LoginController : Controller
 {
-    [HttpGet("index")]
-    
     public IActionResult Index() => View();
+
+    [HttpGet("signUp")]
+    public IActionResult SignUp() => View();
+
+    
     
 }

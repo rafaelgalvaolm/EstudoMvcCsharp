@@ -4,17 +4,47 @@
 <head>
 <link rel="stylesheet" href="~/css/Pages/carro.css" />
 </head>
+<div class="containerCarro">
+  <div class="containerNav">
+    <div id="mySidenav" class="sidenav">
+      <h2>Modelos disponíveis: </h2>
+      <ul>
+        <li onclick="carro.mostraPag('main1', 'suv')">S.U.V</li>
+        <li onclick="carro.mostraPag('main2', 'esportivo')">Esportivo</li>
+        <li>Performace</li>
+        <li>Utilitario</li>
+      </ul>
+    </div>
+  </div>
 
-<div id="mySidenav" class="sidenav">
-  <h2>Modelos disponíveis: </h2>
-  <ul>
-    <li>S.U.V</li>
-    <li>Esportivo</li>
-    <li>Performace</li>
-    <li>Utilitario</li>
-  </ul>
+  <div class="containerMain">
+    <div id="main1" class="suv mostrar">
+
+    </div>
+
+    <div id="main2" class="esportivo mostrar">
+
+    </div>
+
+    <div id="main3" class="performace mostrar">
+
+    </div>
+
+    <div id="main4" class="utilitario mostrar">
+
+    </div>
+  </div>
 </div>
 
-<div id="main">
-  
-</div>
+<script src="~/js/Pages/carro.js" asp-append-version="true"></script>
+<script>
+    carro.init({
+        urls: {
+            suv: '@Url.Action("suv", "carro")',
+            esportivo: '@Url.Action("esportivo", "carro")',
+            performace: '@Url.Action("performace", "carro")',
+            utilitario: '@Url.Action("utilitario", "carro")'
+        }
+    });
+    
+</script>

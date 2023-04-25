@@ -16,15 +16,15 @@
          <ul>
                 <li class="navopt"><a asp-controller="Home" asp-action="Index" class="navLink">Início</a></li>
                 <li class="navopt"><a asp-controller="Carro" asp-action="Index" class="navLink">Carros</a></li>
-                <li class="navopt"><a asp-controller="Faq" asp-action="Index" class="navLink">F.A.Q</a></li>
+                <li class="navopt"><a asp-controller="Home" asp-action="Faq" class="navLink">F.A.Q</a></li>
          </ul>
             <div>
-                <button class="btnSignIn">
+                <a class="btnSignIn" asp-controller="Login" asp-action="Index">
                     SignIn
-                </button>
-                <button class="btnSignUp">
+                </a>
+                <a class="btnSignUp" asp-controller="Login" asp-action="SignUp">
                     SignUp
-                </button>
+                </a>
             </div>
         </nav>
 

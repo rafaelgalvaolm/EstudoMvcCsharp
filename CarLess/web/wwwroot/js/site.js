@@ -61,4 +61,3 @@ for (var el = 0; el < els.length; el++) {
     els[el].style["font-weight"] = "bold"
     els[el].style["font-family"] = "'Brush-Script MT', cursive";
 }
-
