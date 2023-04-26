@@ -4,22 +4,22 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace data.Configuration.Application
 {
-    public class CustomersConfigurations : IEntityTypeConfiguration<Customer>
+    public class UserConfigurations : IEntityTypeConfiguration<User>
     {
-        public void Configure(EntityTypeBuilder<Customer> builder)
+        public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("customer", "dbo");
+            builder.ToTable("user", "dbo");
 
-            builder.HasKey(x => x.customer_id).HasName("pk_customer");
+            builder.HasKey(x => x.usuario_id).HasName("pk_user");
 
-            builder.Property(x => x.customer_id).ValueGeneratedOnAdd().HasColumnName("customer_id");
+            builder.Property(x => x.id).ValueGeneratedOnAdd().HasColumnName("id");
             builder.Property(x => x.first_name).HasColumnName("first_name");
             builder.Property(x => x.last_name).HasColumnName("last_name");
             builder.Property(x => x.email).HasColumnName("email");
-            builder.Property(x => x.phone_number).HasColumnName("phone_number");
+            builder.Property(x => x.password).HasColumnName("password");
 
             builder.HasMany(x => x.Rentals)
-                .WithOne(x => x.Customer);
+                .WithOne(x => x.User);
         }
     }
 }
