@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace core.Models
 {
-    public class User
+    public class Usuario
     {
 
 

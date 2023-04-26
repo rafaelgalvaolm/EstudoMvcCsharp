@@ -9,16 +9,16 @@ namespace core.Models
     {
         public int Id { get; set; }
 
-        public int car_id { get; set; }
+        public int CarId { get; set; }
 
-        public int user_id { get; set; }	
+        public int UserId { get; set; }	
 
         public DateTime RentalStartDate { get; set; }
 
         public DateTime RentalEndDate { get; set; }
         
         public decimal RentalCost { get; set; }
-        public User User { get; set; }
+        public Usuario User { get; set; }
         public Car Car { get; set; }
         
     }

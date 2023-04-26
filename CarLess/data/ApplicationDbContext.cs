@@ -15,10 +15,10 @@ namespace data
 
         }
 
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        public DbSet<Car> cars { get; set; }
+        public DbSet<Car> Cars { get; set; }
 
-        public DbSet<Rental> rentals { get; set; }
+        public DbSet<Rental> Rentals { get; set; }
     }
-}
+    }

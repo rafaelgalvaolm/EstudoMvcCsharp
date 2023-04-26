@@ -1,9 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using core.Interfaces.Repositories;
 using core.Settings;
 using data;
+using data.Repositories;
 
 namespace web.configurations
 {
@@ -16,6 +14,8 @@ namespace web.configurations
             services.AddControllersWithViews();
 
             services.AddScoped<ApplicationDbContext>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }

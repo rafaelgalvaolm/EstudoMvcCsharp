@@ -12,7 +12,7 @@ namespace data.Configuration.Application
 
             builder.HasKey(x => x.Id).HasName("pk_car");
 
-            builder.Property(x => x.Id).ValueGeneratedOnAdd().HasColumnName("car_id");
+            builder.Property(x => x.Id).ValueGeneratedOnAdd().HasColumnName("id");
             builder.Property(x => x.Make).HasColumnName("make");
             builder.Property(x => x.Model).HasColumnName("model");
             builder.Property(x => x.Year).HasColumnName("year");

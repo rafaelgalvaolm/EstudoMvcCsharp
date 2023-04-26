@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace data.Configuration.Application
 {
-    public class UserConfigurations : IEntityTypeConfiguration<User>
+    public class UsuarioConfiguration : IEntityTypeConfiguration<Usuario>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<Usuario> builder)
         {
-            builder.ToTable("user", "dbo");
+            builder.ToTable("usuario", "dbo");
 
-            builder.HasKey(x => x.Id).HasName("pk_user");
+            builder.HasKey(x => x.Id).HasName("pk_usuario");
 
             builder.Property(x => x.Id).ValueGeneratedOnAdd().HasColumnName("id");
             builder.Property(x => x.FirstName).HasColumnName("first_name");
@@ -19,7 +19,7 @@ namespace data.Configuration.Application
             builder.Property(x => x.PassWord).HasColumnName("password");
 
             builder.HasMany(x => x.Rentals)
-                .WithOne(x => x.User);
+                .WithOne(x => x.Usuario));
         }
     }
 }
