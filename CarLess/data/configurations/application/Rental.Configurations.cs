@@ -10,14 +10,14 @@ namespace data.Configuration.Application
         {
             builder.ToTable("rentals", "dbo");
 
-            builder.HasKey(x => x.rental_id).HasName("pk_rental");
+            builder.HasKey(x => x.Id).HasName("pk_rental");
 
-            builder.Property(x => x.rental_id).ValueGeneratedOnAdd().HasColumnName("rental_id");
+            builder.Property(x => x.Id).ValueGeneratedOnAdd().HasColumnName("rental_id");
             builder.Property(x => x.car_id).HasColumnName("car_id");
             builder.Property(x => x.user_id).HasColumnName("usuario_id");
-            builder.Property(x => x.rental_start_date).HasColumnName("rental_start_date");
-            builder.Property(x => x.rental_end_date).HasColumnName("rental_end_date");
-            builder.Property(x => x.rental_cost).HasColumnName("rental_cost");
+            builder.Property(x => x.RentalStartDate).HasColumnName("rental_start_date");
+            builder.Property(x => x.RentalEndDate).HasColumnName("rental_end_date");
+            builder.Property(x => x.RentalCost).HasColumnName("rental_cost");
 
             builder.HasOne(x => x.Car)
                 .WithMany(x => x.Rentals)

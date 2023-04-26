@@ -7,15 +7,15 @@ namespace core.Models
 {
     public class Car
     {
-        public int car_id { get; set; }
+        public int Id { get; set; }
 
-        public string make  { get; set; }
+        public string Make  { get; set; }
 
-        public string model { get; set; }	
+        public string Model { get; set; }	
 
-        public string year { get; set; }
+        public string Year { get; set; }
 
-        public int price_per_day { get; set; }
+        public int PricePerDay { get; set; }
 
         public IEnumerable<Rental> Rentals { get; set; }
     }

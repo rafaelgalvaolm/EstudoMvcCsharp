@@ -10,13 +10,13 @@ namespace data.Configuration.Application
         {
             builder.ToTable("user", "dbo");
 
-            builder.HasKey(x => x.usuario_id).HasName("pk_user");
+            builder.HasKey(x => x.Id).HasName("pk_user");
 
-            builder.Property(x => x.id).ValueGeneratedOnAdd().HasColumnName("id");
-            builder.Property(x => x.first_name).HasColumnName("first_name");
-            builder.Property(x => x.last_name).HasColumnName("last_name");
-            builder.Property(x => x.email).HasColumnName("email");
-            builder.Property(x => x.password).HasColumnName("password");
+            builder.Property(x => x.Id).ValueGeneratedOnAdd().HasColumnName("id");
+            builder.Property(x => x.FirstName).HasColumnName("first_name");
+            builder.Property(x => x.LastName).HasColumnName("last_name");
+            builder.Property(x => x.Email).HasColumnName("email");
+            builder.Property(x => x.PassWord).HasColumnName("password");
 
             builder.HasMany(x => x.Rentals)
                 .WithOne(x => x.User);

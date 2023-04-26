@@ -1,6 +1,5 @@
-using System.Diagnostics;
+using core.Models;
 using Microsoft.AspNetCore.Mvc;
-using web.Models;
 
 namespace web.Controllers;
 
@@ -10,9 +9,15 @@ public class LoginController : Controller
 {
     public IActionResult Index() => View();
 
-    [HttpGet("signUp")]
+    [HttpGet("sign-up")]
     public IActionResult SignUp() => View();
 
-    
+    [HttpPost("sign-up")]
+
+    public IActionResult SignUp(User user)
+    {
+                
+        return RedirectToAction("Index", "Home");
+    }
     
 }
