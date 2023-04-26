@@ -14,7 +14,7 @@ namespace data.Configuration.Application
 
             builder.Property(x => x.rental_id).ValueGeneratedOnAdd().HasColumnName("rental_id");
             builder.Property(x => x.car_id).HasColumnName("car_id");
-            builder.Property(x => x.customer_id).HasColumnName("usuario_id");
+            builder.Property(x => x.user_id).HasColumnName("usuario_id");
             builder.Property(x => x.rental_start_date).HasColumnName("rental_start_date");
             builder.Property(x => x.rental_end_date).HasColumnName("rental_end_date");
             builder.Property(x => x.rental_cost).HasColumnName("rental_cost");
@@ -24,9 +24,9 @@ namespace data.Configuration.Application
                 .HasForeignKey(x => x.car_id)
                 .HasConstraintName("fk_car_id");
 
-            builder.HasOne(x => x.Customer)
+            builder.HasOne(x => x.User)
             .WithMany(x => x.Rentals)
-            .HasForeignKey(x => x.User_id)
+            .HasForeignKey(x => x.user_id)
             .HasConstraintName("fk_user_id");
         }
     }
