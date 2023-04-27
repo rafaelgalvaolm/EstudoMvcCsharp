@@ -7,5 +7,7 @@ namespace core.Models
         public string Marca { get; set; }
         public DateTime Ano { get; set; }
         public decimal PrecoDia { get; set; }
+
+        public IEnumerable<Aluguel> Alugueis { get; set; }
     }
 }

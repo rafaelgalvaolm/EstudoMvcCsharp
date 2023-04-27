@@ -12,7 +12,7 @@ namespace data.Configuration.Application
             builder.Property(x => x.IdCarro).HasColumnName("id_carro");
             builder.Property(x => x.IdUsuario).HasColumnName("id_usuario");
             builder.Property(x => x.InicioAluguel).HasColumnName("inicio_aluguel");
-            builder.Property(x => x.finalAluguel).HasColumnName("final_aluguel");
+            builder.Property(x => x.FinalAluguel).HasColumnName("final_aluguel");
             builder.Property(x => x.CustoTotal).HasColumnName("custo_total");
             builder.Property(x => x.Finalizado).HasColumnName("finalizado");
 

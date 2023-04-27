@@ -1,7 +1,3 @@
-using System.Reflection;
-using core.Settings;
-using Microsoft.EntityFrameworkCore;
-
 namespace data
 {
     public class BaseDbContext : DbContext

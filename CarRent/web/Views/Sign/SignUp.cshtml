@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+<div class="SignUp-Container">
+  <form id="cadastroUsuario">
+      <h1>Crie sua conta</h1>
+      <p>Cria sua conta conosco, para aproveitar todas as nossas ofertas</p>
+      <hr>
+
+      <label for="nome"><b>Nome</b></label>
+      <input type="text" placeholder="Seu nome" name="nome" id="Nome" required>
+
+      <label for="sobrenome"><b>Sobrenome</b></label>
+      <input type="text" placeholder="Seu sobrenome" name="sobrenome" id="Sobrenome" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Seu Email" name="email" id="Email" required>
+
+      <label for="senha"><b>Senha</b></label>
+      <input type="password" placeholder="Escolha uma senha" name="senha" id="Senha" required>
+
+      <label for="senha-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repita sua senha" name="senha-repeat" id="Senha-repeat" required>
+
+      <hr>
+
+      <input type="button" class="registerbtn" onclick="sign.cadastrarUsuario()" value="Registrar-se">
+  </form>
+    </div>
+  <div class="container signin">
+    <p>Já tem uma conta? <a href="#">Sign in</a>.</p>
+</div>
+
+ <script src="~/js/Pages/sign.js" asp-append-version="true"></script>
+ <script>
+     sign.init({
+      urls: { 
+             cadastrarUsuario: '@Url.Action("sign-up", "sign")'
+     }
+  });
+ </script> 

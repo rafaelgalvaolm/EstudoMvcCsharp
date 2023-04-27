@@ -1,1 +1,70 @@
-﻿
+﻿body
+{ 
+    background-color: rgb(20, 83, 85);
+    margin: 0;
+    padding: 0;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.navopt
+{
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.navLink
+{
+    text-decoration: none !important;
+    color: black;
+}
+
+.navLink:visited
+{
+    text-decoration: none !important;
+    color: black;
+}
+
+.logo
+{
+    color: cadetblue;
+    font-family: 'Brush-Script MT', cursive !important;
+}
+
+.logo span
+{
+    color: #ff0000;
+    font-family: 'Brush-Script MT', cursive !important;
+}
+
+.btnSignIn
+{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btnSignUp
+{
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}

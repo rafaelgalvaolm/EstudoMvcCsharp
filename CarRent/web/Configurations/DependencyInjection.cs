@@ -12,7 +12,7 @@ namespace web.configurations
 
             services.AddScoped<ApplicationDbContext>();
 
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
         }
     }
 }

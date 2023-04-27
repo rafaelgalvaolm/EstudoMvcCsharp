@@ -5,23 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - web</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/web.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        
-    </header>
+     <nav>
+         <h2 class="logo">Car<span>Less</span></h2>
+         <ul>
+                <li class="navopt"><a asp-controller="Home" asp-action="Index" class="navLink">Início</a></li>
+                <li class="navopt"><a asp-controller="Carro" asp-action="Index" class="navLink">Carros</a></li>
+                <li class="navopt"><a asp-controller="Home" asp-action="Faq" class="navLink">F.A.Q</a></li>
+         </ul>
+            <div>
+                <a class="btnSignIn" asp-controller="Sign" asp-action="Index">
+                    SignIn
+                </a>
+                <a class="btnSignUp" asp-controller="sign" asp-action="sign-up">
+                    SignUp
+                </a>
+            </div>
+        </nav>
+
     <div class="container">
-        <main role="main" class="main">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer>
 
-    </footer>
+    @* <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2023 - Rafael Glavão Lopes de Mendonça</span>
+        </div>
+    </footer> *@
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    @* <script src="https://unpkg.com/feather-icons"></script>
+    <script src="~/js/featherIcons.js"></script> *@
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

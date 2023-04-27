@@ -2,7 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <link rel="stylesheet" href="~/css/Pages/home.css" />
+</head>
+<div class="intro">
+    <div class="introText">
+        <h1>Bem-Vindo ao <span class="car">Car</span><span class="less">Less</span></h1>
+        <h1>Seu local de aluguel de </h1>
+        <h1><span class="car">carros</span> com os</h1>
+        <h1>preços <span class="less">mais baratos</span></h1>
+    </div>
+
+
+    <div class="containerImg">
+    </div>
 </div>
+<div class="cards">
+    <div class="card-carro">
+        <h3>A Nossa coleção de carros</h3>
+        <h3>é uma das maiores da America Latina</h3>
+        <h3>Para ver nosso católogo, acesse</h3>
+        <button class="btn btn-primary">Aqui</button>
+    </div>
+
+    <div class="card-FAQ">
+        <h3>Ainda tem dúvidas?</h3>
+        <h3>Acesse nossa seção de</h3>
+        <h3>Perguntas e repostas, acesse</h3>
+        <button class="btn btn-primary">Aqui</button>
+    </div>
+</div>
+
+<script src="~/js/Pages/home.js" asp-append-version="true"></script>

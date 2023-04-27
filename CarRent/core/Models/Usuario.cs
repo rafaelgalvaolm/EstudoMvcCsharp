@@ -8,5 +8,7 @@ namespace core.Models
         public string Email { get; set; } // TODO: Criar validação de email
         public string Senha { get; set; } 
         public bool IsAdmin { get; set; }
+
+        public IEnumerable<Aluguel> Alugueis { get; set; }
     }
 }
