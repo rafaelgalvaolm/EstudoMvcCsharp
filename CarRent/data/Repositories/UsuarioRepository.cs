@@ -14,5 +14,19 @@ namespace data.Repositories
             await _DbContext.Usuarios.AddAsync(usuario);
             await _DbContext.SaveChangesAsync();
         }
+
+        public async Task Atualizar(Usuario usuario)
+        {
+            _DbContext.Usuarios.Update(usuario);
+            await _DbContext.SaveChangesAsync();
+        }
+
+        public async Task Excluir(Usuario usuario)
+        {
+            _DbContext.Usuarios.Remove(usuario);
+            await _DbContext.SaveChangesAsync();
+        }
+
+        
     }
 }
